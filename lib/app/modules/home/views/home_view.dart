@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
 import 'package:get/get.dart';
+import 'package:moneymarque/app/modules/home/views/home/home.dart';
 
 import '../controllers/home_controller.dart';
 
@@ -9,7 +10,13 @@ class HomeView extends GetView<HomeController> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: PageView(),
+      body: SafeArea(
+        child: PageView(
+          children: const [
+            Home(),
+          ],
+        ),
+      ),
     );
   }
 }

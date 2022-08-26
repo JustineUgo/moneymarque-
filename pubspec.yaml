@@ -10,6 +10,7 @@ dependencies:
   flutter:
     sdk: flutter
   flutter_native_splash: ^2.2.8
+  flutter_svg: ^1.1.4
   get: 4.6.5
 
 dev_dependencies:
@@ -22,6 +23,7 @@ flutter:
   assets:
     - assets/images/
     - assets/fonts/
+    - assets/svgs/
 
   fonts:
     - family: OpenSans
