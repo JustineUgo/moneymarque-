@@ -1,8 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:moneymarque/app/custom/activity/activity.dart';
 import 'package:moneymarque/app/custom/bank/bank.dart';
 import 'package:moneymarque/app/custom/header/header.dart';
-import 'package:moneymarque/app/custom/header_activity/header_activity.dart';
 import 'package:moneymarque/app/custom/info/info.dart';
 import 'package:moneymarque/app/custom/kwik_lite/kwik_lite.dart';
 import 'package:moneymarque/app/custom/kwik_slot/kwik_slot.dart';

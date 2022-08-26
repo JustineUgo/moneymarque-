@@ -4,6 +4,7 @@ import 'package:flutter_svg/flutter_svg.dart';
 import 'package:get/get.dart';
 import 'package:moneymarque/app/modules/home/views/home/home.dart';
 import 'package:moneymarque/app/modules/home/views/kwik/kwik.dart';
+import 'package:moneymarque/app/modules/home/views/profile/profile.dart';
 import 'package:moneymarque/app/utils/colors/colors.dart';
 import 'package:moneymarque/app/utils/images/image.dart';
 
@@ -23,7 +24,7 @@ class HomeView extends GetView<HomeController> {
               children: const [
                 Kwik(),
                 Home(),
-                Home(),
+                Profile(),
               ],
             ),
           ),
