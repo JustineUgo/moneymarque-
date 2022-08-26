@@ -6,7 +6,8 @@ import 'package:moneymarque/app/utils/colors/colors.dart';
 import 'package:moneymarque/app/utils/images/image.dart';
 
 class Header extends StatelessWidget {
-  const Header({Key? key}) : super(key: key);
+  const Header({Key? key, this.isRouted = false}) : super(key: key);
+  final bool isRouted;
 
   @override
   Widget build(BuildContext context) {
@@ -14,16 +15,20 @@ class Header extends StatelessWidget {
       padding: const EdgeInsets.symmetric(horizontal: 20),
       child: Row(
         children: [
-          Text(
-            'Yo! Micheal',
-            style: TextStyle(
-                fontSize: 18, fontWeight: FontWeight.w600, color: kBlue),
-          ),
+          if (isRouted) 
+          const Icon(Icons.chevron_left_rounded),
+          if (!isRouted)
+            Text(
+              'Yo! Micheal',
+              style: TextStyle(
+                  fontSize: 18, fontWeight: FontWeight.w600, color: kBlue),
+            ),
           const Spacer(),
-          const Icon(
-            Icons.headset_outlined,
-            color: Colors.grey,
-          ),
+          if (!isRouted)
+            const Icon(
+              Icons.headset_outlined,
+              color: Colors.grey,
+            ),
           const SizedBox(
             width: 15,
           ),

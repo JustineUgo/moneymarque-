@@ -24,7 +24,7 @@ class Home extends StatelessWidget {
         ),
         SizedBox(
           height: 170,
-          child: Expanded(child: Services()),
+          child: Services(),
         ),
         SizedBox(
           height: 15,

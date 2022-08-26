@@ -32,6 +32,7 @@ class AcitivityTile extends StatelessWidget {
           children: [
             CircleAvatar(
               backgroundColor: color,
+              radius: 18,
             ),
             Positioned(
               top: 0,
@@ -77,7 +78,10 @@ class AcitivityTile extends StatelessWidget {
         trailing: Text(
           'N 15,000',
           style: TextStyle(
-              color: kBlueLight, fontSize: 15, fontWeight: FontWeight.w600),
+            color: isDebit ? KDebit : kBlueLight,
+            fontSize: 15,
+            fontWeight: FontWeight.w600,
+          ),
         ),
       ),
     );

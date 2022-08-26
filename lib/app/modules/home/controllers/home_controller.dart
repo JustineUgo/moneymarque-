@@ -1,9 +1,11 @@
+import 'package:flutter/cupertino.dart';
 import 'package:get/get.dart';
 
 class HomeController extends GetxController {
-  //TODO: Implement HomeController
+  PageController pageController = PageController();
 
-  final count = 0.obs;
+  Rx<int> screen = 1.obs;
+
   @override
   void onInit() {
     super.onInit();
@@ -19,5 +21,9 @@ class HomeController extends GetxController {
     super.onClose();
   }
 
-  void increment() => count.value++;
+  void switchScreen(int _screen) {
+    screen(_screen);
+    pageController.animateToPage(_screen,
+        duration: const Duration(milliseconds: 500), curve: Curves.easeIn);
+  }
 }
