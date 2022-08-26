@@ -13,6 +13,7 @@ class HomeController extends GetxController {
 
   @override
   void onReady() {
+    switchScreen(1);
     super.onReady();
   }
 
